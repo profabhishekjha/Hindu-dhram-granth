@@ -1,0 +1,72 @@
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover img {
+    transform: scale(1.1);
+  }
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 20%; /* adjust this value as needed */
+    margin: 1%;
+    text-align: center;
+  }
+  
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    /* adjust styles for screens up to 768px wide */
+    .box {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* adjust styles for screens up to 480px wide */
+    .box {
+      width: 90%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .box-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
